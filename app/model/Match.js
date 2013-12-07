@@ -3,8 +3,8 @@ Ext.define('Epta.model.Match', {
     requires: 'Ext.data.identifier.Uuid',
     
     config: {
-	idProperty: 'id',
-	identifier: 'uuid',
+		idProperty: 'id',
+		identifier: 'uuid',
         fields: [
             { name: 'id', type: 'string' },
             { name: 'date', type: 'string' },

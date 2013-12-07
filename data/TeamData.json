@@ -1,0 +1,5 @@
+{ 'teams': [
+	{id: '1', name: 'svs1'},
+	{id: '2', name: 'svs2'},
+	{id: '3', name: 'fcb'}    
+]}

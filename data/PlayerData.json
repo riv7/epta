@@ -1,0 +1,5 @@
+{ 'players': [
+	{id: '1', name: 'Matthias Lange', position: 'Abwehr', team: 'SVS'},
+	{id: '2', name: 'Michael Stöferle', position: 'Mittelfeld', team: 'SVS'},
+	{id: '3', name: 'Claudio Pizarro', position: 'Stürmer', team: 'FCB'}
+]}

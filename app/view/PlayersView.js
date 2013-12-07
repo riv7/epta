@@ -1,27 +1,25 @@
-Ext.define('Epta.view.MatchesView', {
+Ext.define('Epta.view.PlayersView', {
     extend: 'Ext.List',
-    xtype: 'matchesview',
+    xtype: 'playersview',
 	requires: [
-		'Epta.store.Matches'
+		'Epta.store.Players'
 	],
 
     config: {
-    	title: 'GamesView',
+    	title: 'PlayersView',
 	    iconCls: 'home',	
 	    styleHtmlContent: true,
 	    scrollable: true,
-		store: 'Matches',
-        onItemDisclosure: function(record) {
-    		Ext.Msg.alert("Open Match", "Open Match " + record.get('team1')+ " vs. "+ record.get('team2'))         	
-        },
+		store: 'Players',
+        onItemDisclosure: false,
         emptyText: 'No data found!',
-	    grouped: false,
-		indexBar: false,	        
+	    grouped: true,
+		indexBar: true,	        
 
         items: [{
         	docked: 'top',
 	        xtype: 'titlebar',
-	        title: 'Spiele',
+	        title: 'Spieler',
 			items: [
 		        {
 		           iconCls: 'settings',
@@ -30,11 +28,11 @@ Ext.define('Epta.view.MatchesView', {
 	               cls: 'card',
 	               html: "jdsjgkljkldg",
 	               align: 'right',
-	               text: 'new game'
+	               text: 'new player'
 			     }
 	        ]
         }],
-        itemTpl: '<div class="Match"><strong>{team1} : {team2}</strong></div>'
+        itemTpl: '<div class="Player"><strong>{name} | {position} | {team}</strong></div>'
 	}
 
 });

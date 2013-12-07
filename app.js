@@ -18,12 +18,13 @@ Ext.application({
     ],
 
     views: [
-        'Main',
-        'MatchesView'
+        'Main'
     ],
     
 	stores: [
-         'Matches'
+         'Matches',
+         'Teams',
+         'Players'
 	],
 
     icon: {

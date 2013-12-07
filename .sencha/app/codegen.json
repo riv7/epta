@@ -306,6 +306,18 @@
         "name": "Main",
         "controllerNamespace": "Epta.controller"
       }
+    },
+    "app/model/Team.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329",
+      "parameters": {
+        "appName": "Epta",
+        "modelNamespace": "Epta.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "Team",
+        "name": "Team",
+        "fields": "id:auto:null,name:auto:null"
+      }
     }
   }
 }
