@@ -2,9 +2,10 @@ Ext.define('Epta.controller.Main', {
     extend: 'Ext.app.Controller',
     
     config: {
-		stores: 'Epta.store.Matches',
+		stores: 'Matches',
         refs: {
-			mainView: 'main'            
+			mainView: 'main',
+			matchesView: 'matchesview'
         },
         control: {
             

@@ -18,8 +18,13 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'MatchesView'
     ],
+    
+	stores: [
+         'Matches'
+	],
 
     icon: {
         '57': 'resources/icons/Icon.png',

@@ -6,10 +6,10 @@ Ext.define('Epta.model.Match', {
 	idProperty: 'id',
 	identifier: 'uuid',
         fields: [
-            { name: 'id'/*, type: 'auto' */},
-            { name: 'date'/*, type: 'auto' */},
-            { name: 'team1'/*, type: 'auto' */},
-            { name: 'team2'/*, type: 'auto'*/ }
+            { name: 'id', type: 'string' },
+            { name: 'date', type: 'string' },
+            { name: 'team1', type: 'string' },
+            { name: 'team2', type: 'string' }
 
         ]/*,
         proxy: {

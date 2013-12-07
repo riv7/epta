@@ -3,47 +3,13 @@ Ext.define('Epta.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'Epta.view.MatchesView'       
     ],
     config: {
         tabBarPosition: 'bottom',
-
         items: [
             {
-                title: 'Games',
-                iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Spiele',
-					items: [
-				        {
-				           iconCls: 'settings',
-			               action: 'settings',
-			               ui: 'plain',
-			               cls: 'card',
-			               html: "jdsjgkljkldg",
-			               align: 'right',
-			               text: 'new game'
-					     }
-			        ]
-                },          	                
-	                //width: Ext.os.deviceType == 'Phone' ? null : 300,
-	                //height:Ext.os.deviceType == 'Phone' ? null : 500,
-            		xtype: 'list',
-            		store: 'MatchesStore',
-            		itemTpl: '<div class="Epta.model.Match"><strong>{team1}</strong>{team2}</div>',
-            		grouped: true,
-            		indexBar: true/*,
-               
-
-                html: [
-                    "Liste aller Spiele"
-                ].join("")*/
+            	xtype: 'matchesview'                
             },
             {
                 title: 'Teams',
