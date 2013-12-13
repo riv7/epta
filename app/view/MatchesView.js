@@ -24,11 +24,12 @@ Ext.define('Epta.view.MatchesView', {
 	        title: 'Spiele',
 			items: [
 		        {
+		           xtype: 'button',
 		           iconCls: 'settings',
 	               action: 'settings',
 	               ui: 'plain',
 	               cls: 'card',
-	               html: "jdsjgkljkldg",
+	               html: "new match",
 	               align: 'right',
 	               text: 'new game'
 			     }

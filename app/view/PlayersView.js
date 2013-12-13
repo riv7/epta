@@ -26,7 +26,7 @@ Ext.define('Epta.view.PlayersView', {
 	               action: 'settings',
 	               ui: 'plain',
 	               cls: 'card',
-	               html: "jdsjgkljkldg",
+	               html: "new player",
 	               align: 'right',
 	               text: 'new player'
 			     }

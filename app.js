@@ -21,6 +21,10 @@ Ext.application({
         'Main'
     ],
     
+	controllers: [
+         'Main'
+	],
+    
 	stores: [
          'Matches',
          'Teams',
