@@ -1,6 +1,9 @@
 Ext.define('Epta.controller.Main', {
     extend: 'Ext.app.Controller',
-    requires: 'Epta.view.EditPlayerView',    
+    requires: ['Epta.view.EditPlayerView',   
+               'Epta.view.EditTeamView',
+               'Epta.view.EditMatchView'
+               ],
     
     config: {
 		refs: {
@@ -9,12 +12,22 @@ Ext.define('Epta.controller.Main', {
 			teamsView: 'teamsview',
 			playersView: 'playersview',
 			editPlayersView: 'editplayerview',
+			editTeamsView: 'editteamview',
+			editMatchesView: 'editmatchview',
 			
-			btnNewPlayer: 'playersview titlebar button[action=settings]'
+			btnNewPlayer: 'playersview titlebar button[action=settings]',
+			btnNewTeam: 'teamsview titlebar button[action=settings]',
+			btnNewMatch: 'matchesview titlebar button[action=settings]'
         },
         control: {
         	'btnNewPlayer': {
 				tap: 'onBtnNewPlayerTap'
+			},
+			'btnNewTeam': {
+				tap: 'onBtnNewTeamTap'
+			},
+			'btnNewMatch': {
+				tap: 'onBtnNewMatchTap'
 			}
             
         }
@@ -22,6 +35,12 @@ Ext.define('Epta.controller.Main', {
     
     onBtnNewPlayerTap: function() {
 	    this.getMainView().setActiveItem({xtype:'editplayerview'});	    
+	},
+	onBtnNewTeamTap: function() {
+	    this.getMainView().setActiveItem({xtype:'editteamview'});	    
+	},
+	onBtnNewMatchTap: function() {
+	    this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
     
     //called when the Application is launched, remove if not needed

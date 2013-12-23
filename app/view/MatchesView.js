@@ -6,7 +6,7 @@ Ext.define('Epta.view.MatchesView', {
 	],
 
     config: {
-    	title: 'GamesView',
+    	title: 'MatchesView',
 	    iconCls: 'home',	
 	    styleHtmlContent: true,
 	    scrollable: true,
@@ -24,7 +24,6 @@ Ext.define('Epta.view.MatchesView', {
 	        title: 'Spiele',
 			items: [
 		        {
-		           xtype: 'button',
 		           iconCls: 'settings',
 	               action: 'settings',
 	               ui: 'plain',
