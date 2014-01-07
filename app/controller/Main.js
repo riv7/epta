@@ -18,6 +18,10 @@ Ext.define('Epta.controller.Main', {
 			btnNewPlayer: 'playersview titlebar button[action=settings]',
 			btnNewTeam: 'teamsview titlebar button[action=settings]',
 			btnNewMatch: 'matchesview titlebar button[action=settings]'
+				
+			
+			
+			
         },
         control: {
         	'btnNewPlayer': {
@@ -28,12 +32,15 @@ Ext.define('Epta.controller.Main', {
 			},
 			'btnNewMatch': {
 				tap: 'onBtnNewMatchTap'
+			},
+			'matchesview': {
+				disclose: 'onDiscloseEvent'
 			}
             
         }
     },
     
-    onBtnNewPlayerTap: function() {
+    onBtnNewPlayerTap: function() {    	
 	    this.getMainView().setActiveItem({xtype:'editplayerview'});	    
 	},
 	onBtnNewTeamTap: function() {
@@ -42,6 +49,10 @@ Ext.define('Epta.controller.Main', {
 	onBtnNewMatchTap: function() {
 	    this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
+	onDiscloseEvent: function(list, record, target, index, event, eOpts) {
+    	Ext.Viewport.setActiveItem({xtype:'editplayerview'});
+		//Ext.Msg.alert("Open Match", "Open Match " + record.get('team1')+ " vs. "+ record.get('team2'))         	
+    },
     
     //called when the Application is launched, remove if not needed
     launch: function(app) {

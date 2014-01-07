@@ -11,9 +11,7 @@ Ext.define('Epta.view.MatchesView', {
 	    styleHtmlContent: true,
 	    scrollable: true,
 		store: 'Matches',
-        onItemDisclosure: function(record) {
-    		Ext.Msg.alert("Open Match", "Open Match " + record.get('team1')+ " vs. "+ record.get('team2'))         	
-        },
+		onItemDisclosure: true,
         emptyText: 'No data found!',
 	    grouped: false,
 		indexBar: false,	        
