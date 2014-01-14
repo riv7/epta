@@ -15,12 +15,12 @@ Ext.define('Epta.controller.Main', {
 			editPlayersView: 'editplayerview',
 			editTeamsView: 'editteamview',
 			editMatchesView: 'editmatchview',
-			matchMainView: 'matchmainview',			
+			matchMainView: 'matchmainview',		
+			
 			btnNewPlayer: 'playersview titlebar button[action=settings]',
 			btnNewTeam: 'teamsview titlebar button[action=settings]',
-			btnNewMatch: 'matchesview titlebar button[action=settings]'		
-			
-				
+			btnNewMatch: 'matchesview titlebar button[action=settings]',
+			btnMatchMainBack: 'matchmainview titlebar button[action=back]'		
 			
         },
         control: {
@@ -32,10 +32,13 @@ Ext.define('Epta.controller.Main', {
 			},
 			'btnNewMatch': {
 				tap: 'onBtnNewMatchTap'
-			},
+			},			
 			'matchesview': {
 				disclose: 'onDiscloseEvent'
-			}			
+			},
+			'btnMatchMainBack': {
+				tap: 'onBtnMatchMainBackTap'
+			}
         }
     },
     
@@ -47,6 +50,10 @@ Ext.define('Epta.controller.Main', {
 	},
 	onBtnNewMatchTap: function() {
 	    this.getMainView().setActiveItem({xtype:'editmatchview'});	    
+	},
+	onBtnMatchMainBackTap: function() {
+		Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);
+	    //this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
 	onDiscloseEvent: function(list, record, target, index, event, eOpts) {		
 		var matchmainview= Ext.create('Epta.view.MatchMainView');

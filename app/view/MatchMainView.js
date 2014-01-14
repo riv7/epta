@@ -1,6 +1,7 @@
 Ext.define('Epta.view.MatchMainView', {
 	extend: 'Ext.form.Panel',
     xtype: 'matchmainview',
+    requires: ['Ext.field.Toggle'],
 
     config: {
     	title: 'MatchMainView',
@@ -12,17 +13,19 @@ Ext.define('Epta.view.MatchMainView', {
 	        title: 'X vs. Y',
 			items: [
 		        {
+		           action: 'back',
 		           ui: 'back',
 		           text: 'Back',
-//	               cls: 'card.',
-//	               html: "new match",
 	               align: 'left'
 	              
-			     }
+			     },{
+			       xtype: 'togglefield',
+			       name: 'toggle',
+			       label: 'läuft',
+			       align: 'right'
+		    	 }			     
 	        ]
-        }],        
-        
-        
+        }],           
         
         html: 'GGAME'
 	}
