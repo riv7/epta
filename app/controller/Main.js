@@ -2,7 +2,8 @@ Ext.define('Epta.controller.Main', {
     extend: 'Ext.app.Controller',
     requires: ['Epta.view.EditPlayerView',   
                'Epta.view.EditTeamView',
-               'Epta.view.EditMatchView'
+               'Epta.view.EditMatchView',
+               'Epta.view.MatchMainView'
                ],
     
     config: {
@@ -14,13 +15,12 @@ Ext.define('Epta.controller.Main', {
 			editPlayersView: 'editplayerview',
 			editTeamsView: 'editteamview',
 			editMatchesView: 'editmatchview',
-			
+			matchMainView: 'matchmainview',			
 			btnNewPlayer: 'playersview titlebar button[action=settings]',
 			btnNewTeam: 'teamsview titlebar button[action=settings]',
-			btnNewMatch: 'matchesview titlebar button[action=settings]'
+			btnNewMatch: 'matchesview titlebar button[action=settings]'		
+			
 				
-			
-			
 			
         },
         control: {
@@ -35,8 +35,7 @@ Ext.define('Epta.controller.Main', {
 			},
 			'matchesview': {
 				disclose: 'onDiscloseEvent'
-			}
-            
+			}			
         }
     },
     
@@ -49,10 +48,11 @@ Ext.define('Epta.controller.Main', {
 	onBtnNewMatchTap: function() {
 	    this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
-	onDiscloseEvent: function(list, record, target, index, event, eOpts) {
-    	Ext.Viewport.setActiveItem({xtype:'editplayerview'});
-		//Ext.Msg.alert("Open Match", "Open Match " + record.get('team1')+ " vs. "+ record.get('team2'))         	
-    },
+	onDiscloseEvent: function(list, record, target, index, event, eOpts) {		
+		var matchmainview= Ext.create('Epta.view.MatchMainView');
+		matchmainview.down('titlebar').setTitle(record.get('team1')+' vs. '+record.get('team2'));
+		Ext.Viewport.setActiveItem(matchmainview);		  	
+    },    
     
     //called when the Application is launched, remove if not needed
     launch: function(app) {

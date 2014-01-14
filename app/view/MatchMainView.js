@@ -5,23 +5,26 @@ Ext.define('Epta.view.MatchMainView', {
     config: {
     	title: 'MatchMainView',
 	    styleHtmlContent: true,
-	    
+	    	    
 	    items: [{
         	docked: 'top',
 	        xtype: 'titlebar',
-	        title: 'SVS - FCB',
+	        title: 'X vs. Y',
 			items: [
 		        {
 		           ui: 'back',
 		           text: 'Back',
-//	               cls: 'card',
+//	               cls: 'card.',
 //	               html: "new match",
 	               align: 'left'
 	              
 			     }
 	        ]
-        }],
+        }],        
+        
+        
+        
         html: 'GGAME'
 	}
-
+	
 });

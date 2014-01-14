@@ -34,5 +34,4 @@ Ext.define('Epta.view.MatchesView', {
         }],
         itemTpl: '<div class="Match"><strong>{team1} : {team2}</strong></div>'
 	}
-
 });
