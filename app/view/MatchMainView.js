@@ -2,7 +2,8 @@ Ext.define('Epta.view.MatchMainView', {
 	extend: 'Ext.form.Panel',
     xtype: 'matchmainview',
     requires: ['Ext.field.Toggle',
-               'Ext.carousel.Carousel'
+               'Ext.carousel.Carousel',
+               'Epta.view.MatchCenterView'
     ],
 
     config: {
@@ -45,8 +46,9 @@ Ext.define('Epta.view.MatchMainView', {
         	    	cls: 'card'
     			},
     			{
-        	    	html: '<p>middle</p>',
-        	    	cls: 'card'
+    				xtype: 'matchcenterview'
+        	    	//html: '<p>middle</p>',
+        	    	//cls: 'card'
     			},
     			{
         	    	html: '<p>right</p>',
