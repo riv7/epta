@@ -55,9 +55,14 @@ Ext.define('Epta.controller.Main', {
 		Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);
 	    //this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
-	onDiscloseEvent: function(list, record, target, index, event, eOpts) {		
+	onDiscloseEvent: function(list, record, target, index, event, eOpts) {	
+		var nameT1 = record.get('team1')
+		var nameT2 = record.get('team2')
 		var matchmainview= Ext.create('Epta.view.MatchMainView');
-		matchmainview.down('titlebar').setTitle(record.get('team1')+' vs. '+record.get('team2'));
+		matchmainview.down('titlebar').setTitle(nameT1+' vs. '+nameT2);		
+		matchmainview.down('#actionTeam1').setText(nameT1)
+		matchmainview.down('#actionTeam2').setText(nameT2)
+		//matchmainview.down('button[teamActionButton=actionTeam1]').setText(record.get('team1'))
 		Ext.Viewport.setActiveItem(matchmainview);		  	
     },    
     
