@@ -1,9 +1,9 @@
-Ext.define('Epta.view.MatchMainView', {
+Ext.define('Epta.view.match.MatchMainView', {
 	extend: 'Ext.form.Panel',
     xtype: 'matchmainview',
     requires: ['Ext.field.Toggle',
                'Ext.carousel.Carousel',
-               'Epta.view.MatchCenterView'
+               'Epta.view.match.MatchCenterView'
     ],
 
     config: {

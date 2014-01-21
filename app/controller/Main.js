@@ -1,9 +1,9 @@
 Ext.define('Epta.controller.Main', {
     extend: 'Ext.app.Controller',
-    requires: ['Epta.view.EditPlayerView',   
-               'Epta.view.EditTeamView',
-               'Epta.view.EditMatchView',
-               'Epta.view.MatchMainView'
+    requires: ['Epta.view.edit.EditPlayerView',   
+               'Epta.view.edit.EditTeamView',
+               'Epta.view.edit.EditMatchView',
+               'Epta.view.match.MatchMainView'
                ],
     
     config: {
@@ -58,7 +58,7 @@ Ext.define('Epta.controller.Main', {
 	onDiscloseEvent: function(list, record, target, index, event, eOpts) {	
 		var nameT1 = record.get('team1')
 		var nameT2 = record.get('team2')
-		var matchmainview= Ext.create('Epta.view.MatchMainView');
+		var matchmainview= Ext.create('Epta.view.match.MatchMainView');
 		matchmainview.down('titlebar').setTitle(nameT1+' vs. '+nameT2);		
 		matchmainview.down('#actionTeam1').setText(nameT1)
 		matchmainview.down('#actionTeam2').setText(nameT2)

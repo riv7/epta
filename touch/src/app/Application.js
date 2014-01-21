@@ -184,7 +184,7 @@ Ext.define('Ext.app.Application', {
         'Ext.app.Profile',
         'Ext.app.Router',
         'Ext.app.Action'
-    ],
+    ],    
 
     config: {
         /**

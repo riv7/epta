@@ -1,4 +1,4 @@
-Ext.define('Epta.view.MatchCenterView', {
+Ext.define('Epta.view.match.MatchCenterView', {
     extend: 'Ext.form.Panel',
     xtype: 'matchcenterview',
 	requires: [

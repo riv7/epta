@@ -3,9 +3,9 @@ Ext.define('Epta.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Epta.view.MatchesView' ,      
-        'Epta.view.TeamsView',     
-        'Epta.view.PlayersView'        
+        'Epta.view.base.MatchesView' ,      
+        'Epta.view.base.TeamsView',     
+        'Epta.view.base.PlayersView'        
     ],
     config: {
         tabBarPosition: 'bottom',

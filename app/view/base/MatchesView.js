@@ -1,38 +1,37 @@
-Ext.define('Epta.view.TeamsView', {
+Ext.define('Epta.view.base.MatchesView', {
     extend: 'Ext.List',
-    xtype: 'teamsview',
+    xtype: 'matchesview',
 	requires: [
-		'Epta.store.Teams'
+		'Epta.store.Matches'
 	],
 
     config: {
-    	title: 'TeamsView',
-	    iconCls: 'action',	
+    	title: 'MatchesView',
+	    iconCls: 'home',	
 	    styleHtmlContent: true,
 	    scrollable: true,
-		store: 'Teams',
-        onItemDisclosure: false,
+		store: 'Matches',
+		onItemDisclosure: true,
         emptyText: 'No data found!',
-	    grouped: true,
-		indexBar: true,	        
+	    grouped: false,
+		indexBar: false,	        
 
         items: [{
         	docked: 'top',
 	        xtype: 'titlebar',
-	        title: 'Teams',
+	        title: 'Spiele',
 			items: [
 		        {
 		           iconCls: 'settings',
 	               action: 'settings',
 	               ui: 'plain',
 	               cls: 'card',
-	               html: "new team",
+	               html: "new match",
 	               align: 'right',
-	               text: 'new team2'
+	               text: 'new game'
 			     }
 	        ]
         }],
-        itemTpl: '<div class="Team"><strong>{name}</strong></div>'
+        itemTpl: '<div class="Match"><strong>{team1} : {team2}</strong></div>'
 	}
-
 });

@@ -1,4 +1,4 @@
-Ext.define('Epta.view.EditPlayerView', {
+Ext.define('Epta.view.edit.EditPlayerView', {
     extend: 'Ext.form.Panel',
     xtype: 'editplayerview',
 	requires: [

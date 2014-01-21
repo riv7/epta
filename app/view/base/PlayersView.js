@@ -1,4 +1,4 @@
-Ext.define('Epta.view.PlayersView', {
+Ext.define('Epta.view.base.PlayersView', {
     extend: 'Ext.List',
     xtype: 'playersview',
 	requires: [

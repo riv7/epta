@@ -1,4 +1,4 @@
-Ext.define('Epta.view.EditMatchView', {
+Ext.define('Epta.view.edit.EditMatchView', {
     extend: 'Ext.form.Panel',
     xtype: 'editmatchview',
 	requires: [
