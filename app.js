@@ -28,7 +28,8 @@ Ext.application({
 	stores: [
          'Matches',
          'Teams',
-         'Players'
+         'Players',
+         'MatchEvents'
 	],
 
     icon: {

@@ -11,7 +11,10 @@ Ext.define('Epta.model.Match', {
             { name: 'team1', type: 'string' },
             { name: 'team2', type: 'string' }
 
-        ]/*,
+        ],
+        hasMany: [{ model: 'Epta.model.MatchEvent' }]        
+    	
+	/*,
         proxy: {
            type: 'localstorage',
            id: 'matchstore'

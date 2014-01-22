@@ -3,7 +3,8 @@ Ext.define('Epta.view.match.MatchMainView', {
     xtype: 'matchmainview',
     requires: ['Ext.field.Toggle',
                'Ext.carousel.Carousel',
-               'Epta.view.match.MatchCenterView'
+               'Epta.view.match.MatchCenterView',
+               'Epta.view.match.MatchProgressView'
     ],
 
     config: {
@@ -16,8 +17,7 @@ Ext.define('Epta.view.match.MatchMainView', {
     	},
     	defaults: {
     		flex: 1
-		},   	
-    
+		},    
 	    	    
 	    items: [{
         	docked: 'top',
@@ -42,13 +42,10 @@ Ext.define('Epta.view.match.MatchMainView', {
         	activeItem: 1,
         	items : [
         	    {
-        	    	html: '<p>left</p>',
-        	    	cls: 'card'
+        	    	xtype: 'matchprogressview'        	    	
     			},
     			{
-    				xtype: 'matchcenterview'
-        	    	//html: '<p>middle</p>',
-        	    	//cls: 'card'
+    				xtype: 'matchcenterview'        	    	
     			},
     			{
         	    	html: '<p>right</p>',
