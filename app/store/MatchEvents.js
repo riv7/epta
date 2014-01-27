@@ -3,7 +3,10 @@ Ext.define("Epta.store.MatchEvents", {
 	requires: ['Epta.model.MatchEvent'],
 //	id:'matches',
 	config: {
-		model: 'Epta.model.MatchEvent',		
+		model: 'Epta.model.MatchEvent',	
+		grouper: function(record) {
+		 	return record.get('minute')[0]
+		},
 		autoLoad: true,
 		
 		proxy: {

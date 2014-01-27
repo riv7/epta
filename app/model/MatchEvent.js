@@ -7,18 +7,19 @@ Ext.define('Epta.model.MatchEvent', {
 		identifier: 'uuid',
         fields: [
             { name: 'id', type: 'int' },
+            { name: 'minute', type: 'int'},
             { name: 'team', type: 'string' },
             { name: 'player', type: 'string' },
             { name: 'type', type: 'string' },
             { name: 'matchid', type: 'int' },
 
         ],
+        sorters: 'minute',    
 	    associations: [{
 	        type:'belongsTo', 
 	        model:'Epta.model.Match',
 	        foreignKey: 'matchid'
-	    }]
-        
+	    }]        
     	
 	
 	/*,

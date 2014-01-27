@@ -42,7 +42,8 @@ Ext.define('Epta.view.match.MatchMainView', {
         	activeItem: 1,
         	items : [
         	    {
-        	    	xtype: 'matchprogressview'        	    	
+        	    	xtype: 'matchprogressview',
+        	    	cls: 'card'
     			},
     			{
     				xtype: 'matchcenterview'        	    	

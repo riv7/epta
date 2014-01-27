@@ -1,5 +1,5 @@
 { 'matchEvents': [
-	{id: '1',team: 'svs', player: 'Matthias Lange', type: 'goal', message: 'Tor', matchId: 1},
-	{id: '2',team: 'svs', player: 'Michael Stöferle', type: 'substitution', message: 'Auswechslung', matchId: 1},
-	{id: '3',team: '', player: '', type: 'endgame', message: 'Spielende', matchId: 1}    
+	{id: '1',minute: '7', team: 'svs', player: 'Matthias Lange', type: 'goal', message: 'Tor', matchId: 1},
+	{id: '2',minute: '59', team: 'svs', player: 'Michael Stöferle', type: 'substitution', message: 'Auswechslung', matchId: 1},
+	{id: '3',minute: '90', team: '', player: '', type: 'endgame', message: 'Spielende', matchId: 1}    
 ]}
