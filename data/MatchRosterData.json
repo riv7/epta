@@ -1,0 +1,4 @@
+{ 'matchrosters': [
+	{id: '1',team: 'svs', matchid: '1'},
+	{id: '2',team: 'fcb', matchid: '1'}    
+]}

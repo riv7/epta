@@ -12,7 +12,23 @@ Ext.define('Epta.model.Match', {
             { name: 'team2', type: 'string' }
 
         ],
-        hasMany: [{ model: 'Epta.model.MatchEvent' }]        
+        
+        associations : [
+            {
+            	type: 'hasMany',
+            	model: 'Epta.model.MatchEvent',
+            	getterName: 'getMatchEvents',
+            	associationKey : 'MatchEvents'
+    		},
+    		{
+            	type: 'hasMany',
+            	model: 'Epta.model.MatchRoster',
+            	getterName: 'getMatchRosters',
+            	associationKey : 'MatchRosters'
+    		}
+        ]
+//        hasMany: [{ model: 'Epta.model.MatchEvent' }],
+//        hasMany: [{ model: 'Epta.model.MatchEvent' }]
     	
 	/*,
         proxy: {

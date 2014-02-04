@@ -4,7 +4,7 @@ Ext.define('Epta.view.match.MatchProgressView', {
 	requires: [
            'Ext.Label',
            'Epta.view.match.MatchProgressList',
-           'Epta.view.match.MatchRosterList'
+           'Epta.view.match.MatchRosterTabView'
 	],
 	
 	config: {
@@ -30,7 +30,7 @@ Ext.define('Epta.view.match.MatchProgressView', {
 	    		flex : 1
 		    },
 	    	{
-		    	xtype: 'matchrosterlist',
+		    	xtype: 'matchrostertabview',
 		    	flex : 3
 			}
 	    ]   

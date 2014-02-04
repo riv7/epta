@@ -10,6 +10,6 @@ Ext.define('Epta.model.Player', {
             { name: 'name', type: 'string' },
             { name: 'position', type: 'string' },
             { team: 'team', type: 'string' }
-        ]
+        ]        
     }
 });
