@@ -1,17 +1,17 @@
-Ext.define("Epta.store.MatchRosters", {
+Ext.define("Epta.store.MatchAwayPlayers", {
 	extend: 'Ext.data.Store',	
-	requires: ['Epta.model.MatchRoster'],
+	requires: ['Epta.model.MatchPlayer'],
 //	id:'matches',
 	config: {
-		model: 'Epta.model.MatchRoster',	
+		model: 'Epta.model.MatchPlayer',		
 		autoLoad: true,
 		
 		proxy: {
             type: 'ajax',
-            url: 'data/MatchRostersData.json',
+            url: 'data/MatchAwayPlayerData.json',
             reader: {
                 type: 'json',
-                rootProperty: 'matchrosters'
+                rootProperty: 'matchplayers'
             }
         }
 		/*,

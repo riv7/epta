@@ -29,7 +29,9 @@ Ext.application({
          'Matches',
          'Teams',
          'Players',
-         'MatchEvents'
+         'MatchEvents',
+         'MatchHomePlayers',
+         'MatchAwayPlayers'
 	],
 
     icon: {

@@ -1,5 +1,0 @@
-{ 'matchplayers': [
-	{id: '1',number: '7', player: 'Matthias Lange', position: 'Abwehr', rosterid: '1'},	
-	{id: '2',number: '5', player: 'Michael Stöferle', position: 'Mittelfeld', rosterid: '1'},	
-	{id: '3',number: '11', player: 'Claudio Pizarro', position: 'Stürmer', rosterid: '2'}	
-]}

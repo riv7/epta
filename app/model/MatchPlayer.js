@@ -10,14 +10,13 @@ Ext.define('Epta.model.MatchPlayer', {
             { name: 'number', type: 'int'},            
             { name: 'player', type: 'string' },
             { name: 'position', type: 'string' },
-            { name: 'rosterid', type: 'int' },
-
+            { name: 'matchid', type: 'int' }
         ],
 	    associations: [
            {
 		        type:'belongsTo', 
-		        model:'Epta.model.MatchRoster',
-		        foreignKey: 'rosterid'
+		        model:'Epta.model.Match',
+		        foreignKey: 'matchid'
 //				type:'hasOne', 
 //		        model:'Epta.model.Match',
 //				getterName     : 'getMatch',

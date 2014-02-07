@@ -22,9 +22,9 @@ Ext.define('Epta.model.Match', {
     		},
     		{
             	type: 'hasMany',
-            	model: 'Epta.model.MatchRoster',
+            	model: 'Epta.model.MatchPlayer',
             	getterName: 'getMatchRosters',
-            	associationKey : 'MatchRosters'
+            	associationKey : 'matchplayers'
     		}
         ]
 //        hasMany: [{ model: 'Epta.model.MatchEvent' }],

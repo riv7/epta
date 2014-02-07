@@ -1,27 +1,28 @@
-Ext.define('Epta.view.match.MatchRosterList', {
+Ext.define('Epta.view.match.MatchHomePlayerList', {
 	extend: 'Ext.List',
-	xtype: 'matchrosterlist',
+	xtype: 'matchhomeplayerlist',
 	requires: [
-		'Epta.store.MatchEvents'
+		'Epta.store.MatchHomePlayers'
 	],
 	
 	config: {
-		title: 'MatchRosterList',
+		title: 'MatchHomePlayerList',
 	    styleHtmlContent: true,
 	    scrollable: true,
-		store: 'MatchEvents',
+		store: 'MatchHomePlayers',
 	    onItemDisclosure: false,
 	    emptyText: 'No data found!',
 			    	    
 	    itemTpl: 
-    	['<div class="MatchEvent">',
+    	['<div>',
     	 '<table id="myTable">',
 	      '<tr>',
-	      	'<td class="first-child">{minute}</td>',
-	        '<td>{type}</td>',
-	        '<td>{team}</td>',
+	      	'<td>{number}</td>',
 	        '<td>{player}</td>',
-	        '<td class="last-child">{message}</td>',	        
+	        '<td>{position}</td>',
+//	        '<td>{team}</td>',
+//	        '<td>{player}</td>',
+//	        '<td class="last-child">{message}</td>',	        
 	      '</tr>',
 	    '</table>']      
 	    	

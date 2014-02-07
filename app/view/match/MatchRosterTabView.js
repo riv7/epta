@@ -2,7 +2,8 @@ Ext.define('Epta.view.match.MatchRosterTabView', {
 	extend: 'Ext.tab.Panel',
 	xtype: 'matchrostertabview',
 	requires: [
-           'Epta.view.match.MatchRosterList'
+           'Epta.view.match.MatchHomePlayerList',
+           'Epta.view.match.MatchAwayPlayerList'
 	],
 	
 	config: {
@@ -20,10 +21,10 @@ Ext.define('Epta.view.match.MatchRosterTabView', {
 			    	    
 	    items: [
 		    {
-		    	xtype: 'matchrosterlist'		    	
+		    	xtype: 'matchhomeplayerlist'		    	
 		    },
 	    	{
-	    		xtype: 'matchrosterlist'		  
+	    		xtype: 'matchawayplayerlist'		  
 	    	}
 	    ]   
 	}
