@@ -5,6 +5,9 @@ Ext.define("Epta.store.MatchAwayPlayers", {
 	config: {
 		model: 'Epta.model.MatchPlayer',		
 		autoLoad: true,
+		grouper: function(record) {
+		 	return record.get('position')
+		},
 		
 		proxy: {
             type: 'ajax',

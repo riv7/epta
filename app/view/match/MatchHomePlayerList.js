@@ -12,6 +12,14 @@ Ext.define('Epta.view.match.MatchHomePlayerList', {
 		store: 'MatchHomePlayers',
 	    onItemDisclosure: false,
 	    emptyText: 'No data found!',
+	    grouped: true,
+	    
+	    items: [{
+        	docked: 'top',
+	        xtype: 'button',
+	        action: 'settings',
+	        text: 'add'
+        }],
 			    	    
 	    itemTpl: 
     	['<div>',

@@ -3,7 +3,8 @@ Ext.define('Epta.controller.Main', {
     requires: ['Epta.view.edit.EditPlayerView',   
                'Epta.view.edit.EditTeamView',
                'Epta.view.edit.EditMatchView',
-               'Epta.view.match.MatchMainView'
+               'Epta.view.match.MatchMainView',
+               'Epta.view.edit.AddMatchPlayerView'
                ],
     
     config: {
@@ -16,11 +17,17 @@ Ext.define('Epta.controller.Main', {
 			editTeamsView: 'editteamview',
 			editMatchesView: 'editmatchview',
 			matchMainView: 'matchmainview',		
+			matchAwayPlayerView: 'matchawayplayerlist',
+			matchhomePlayerView: 'matchhomeplayerlist',
+			addMatchPlayerView: 'addmatchplayerview',
 			
 			btnNewPlayer: 'playersview titlebar button[action=settings]',
 			btnNewTeam: 'teamsview titlebar button[action=settings]',
 			btnNewMatch: 'matchesview titlebar button[action=settings]',
-			btnMatchMainBack: 'matchmainview titlebar button[action=back]'		
+			btnMatchMainBack: 'matchmainview titlebar button[action=back]',
+			btnAddMatchAwayPlayer: 'matchawayplayerlist button[action=settings]',
+			btnAddMatchHomePlayer: 'matchhomeplayerlist button[action=settings]',
+			btnConfirmAddMatchPlayer: 'addmatchplayerview button[action=confirm]'
 			
         },
         control: {
@@ -38,7 +45,16 @@ Ext.define('Epta.controller.Main', {
 			},
 			'btnMatchMainBack': {
 				tap: 'onBtnMatchMainBackTap'
-			}
+			},
+			'btnAddMatchAwayPlayer': {
+				tap: 'onBtnAddMatchAwayPlayerTap'
+			},
+			'btnAddMatchHomePlayer': {
+				tap: 'onBtnAddMatchHomePlayerTap'
+			},
+			'btnConfirmAddMatchPlayer': {
+				tap: 'onBtnConfirmAddMatchPlayerTap'
+			}	
         }
     },
     
@@ -54,6 +70,16 @@ Ext.define('Epta.controller.Main', {
 	onBtnMatchMainBackTap: function() {
 		Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);
 	    //this.getMainView().setActiveItem({xtype:'editmatchview'});	    
+	},
+	onBtnConfirmAddMatchPlayerTap: function() {
+		//this.getMainView().setActiveItem(0);
+		Ext.Viewport.setActiveItem({xtype:'matchmainview'});
+	},
+	onBtnAddMatchAwayPlayerTap: function() {
+		Ext.Viewport.setActiveItem({xtype:'addmatchplayerview'});
+	},
+	onBtnAddMatchHomePlayerTap: function() {
+		Ext.Viewport.setActiveItem({xtype:'addmatchplayerview'});
 	},
 	onDiscloseEvent: function(list, record, target, index, event, eOpts) {	
 		var nameT1 = record.get('team1')

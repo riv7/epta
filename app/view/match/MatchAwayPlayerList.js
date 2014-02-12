@@ -11,7 +11,16 @@ Ext.define('Epta.view.match.MatchAwayPlayerList', {
 	    scrollable: true,
 		store: 'MatchAwayPlayers',
 	    onItemDisclosure: false,
-	    emptyText: 'No data found!',
+	    emptyText: 'No data found!',	
+	    grouped: true,
+
+	    items: [{
+        	docked: 'top',
+	        xtype: 'button',
+	        action: 'settings',
+	        text: 'add'
+        }],
+
 			    	    
 	    itemTpl: 
     	['<div>',
