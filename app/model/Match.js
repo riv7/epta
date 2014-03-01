@@ -22,6 +22,12 @@ Ext.define('Epta.model.Match', {
     		},
     		{
             	type: 'hasMany',
+            	model: 'Epta.model.ChatMessage',
+            	getterName: 'getChatMessages',
+            	associationKey : 'ChatMessages'
+    		},
+    		{
+            	type: 'hasMany',
             	model: 'Epta.model.MatchPlayer',
             	getterName: 'getMatchRosters',
             	associationKey : 'matchplayers'

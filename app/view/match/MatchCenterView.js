@@ -2,11 +2,13 @@ Ext.define('Epta.view.match.MatchCenterView', {
     extend: 'Ext.form.Panel',
     xtype: 'matchcenterview',
 	requires: [
-           'Ext.Label'
+           'Ext.Label',
+           'Epta.view.match.ChatList'
 	],
     	    
     config: {
-		title : 'MatchCenterView',		
+		title : 'MatchCenterView',	
+		layout:'vbox',
         items:[{
         	xtype: 'toolbar',
         	docked: 'top',
@@ -40,7 +42,8 @@ Ext.define('Epta.view.match.MatchCenterView', {
 	        ]
 		   
         	}, {
-        		html: 'MYCENTER'
+        		xtype: 'chatlist',
+        		flex: 1
         	}, {
         		xtype: 'toolbar',
         		docked: 'bottom',        	
