@@ -19,7 +19,39 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
+  "Epta.controller.Main": [],
+  "Epta.model.ChatMessage": [],
+  "Epta.model.Match": [],
+  "Epta.model.MatchEvent": [],
+  "Epta.model.MatchPlayer": [],
+  "Epta.model.OnlineUser": [],
+  "Epta.model.Player": [],
+  "Epta.model.Team": [],
+  "Epta.store.ChatMessages": [],
+  "Epta.store.MatchAwayPlayers": [],
+  "Epta.store.MatchEvents": [],
+  "Epta.store.MatchHomePlayers": [],
+  "Epta.store.Matches": [],
+  "Epta.store.OnlineUsers": [],
+  "Epta.store.Players": [],
+  "Epta.store.Teams": [],
   "Epta.view.Main": [],
+  "Epta.view.base.MatchesView": [],
+  "Epta.view.base.PlayersView": [],
+  "Epta.view.base.TeamsView": [],
+  "Epta.view.edit.AddMatchPlayerView": [],
+  "Epta.view.edit.EditMatchView": [],
+  "Epta.view.edit.EditPlayerView": [],
+  "Epta.view.edit.EditTeamView": [],
+  "Epta.view.match.ChatList": [],
+  "Epta.view.match.MatchAwayPlayerList": [],
+  "Epta.view.match.MatchCenterView": [],
+  "Epta.view.match.MatchHomePlayerList": [],
+  "Epta.view.match.MatchMainView": [],
+  "Epta.view.match.MatchProgressList": [],
+  "Epta.view.match.MatchProgressView": [],
+  "Epta.view.match.MatchRosterTabView": [],
+  "Epta.view.match.OnlineUsersList": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -643,8 +675,72 @@ Ext.ClassManager.addNameAlternateMappings({
   ]
 });
 Ext.ClassManager.addNameAliasMappings({
+  "Epta.controller.Main": [],
+  "Epta.model.ChatMessage": [],
+  "Epta.model.Match": [],
+  "Epta.model.MatchEvent": [],
+  "Epta.model.MatchPlayer": [],
+  "Epta.model.OnlineUser": [],
+  "Epta.model.Player": [],
+  "Epta.model.Team": [],
+  "Epta.store.ChatMessages": [],
+  "Epta.store.MatchAwayPlayers": [],
+  "Epta.store.MatchEvents": [],
+  "Epta.store.MatchHomePlayers": [],
+  "Epta.store.Matches": [],
+  "Epta.store.OnlineUsers": [],
+  "Epta.store.Players": [],
+  "Epta.store.Teams": [],
   "Epta.view.Main": [
     "widget.main"
+  ],
+  "Epta.view.base.MatchesView": [
+    "widget.matchesview"
+  ],
+  "Epta.view.base.PlayersView": [
+    "widget.playersview"
+  ],
+  "Epta.view.base.TeamsView": [
+    "widget.teamsview"
+  ],
+  "Epta.view.edit.AddMatchPlayerView": [
+    "widget.addmatchplayerview"
+  ],
+  "Epta.view.edit.EditMatchView": [
+    "widget.editmatchview"
+  ],
+  "Epta.view.edit.EditPlayerView": [
+    "widget.editplayerview"
+  ],
+  "Epta.view.edit.EditTeamView": [
+    "widget.editteamview"
+  ],
+  "Epta.view.match.ChatList": [
+    "widget.chatlist"
+  ],
+  "Epta.view.match.MatchAwayPlayerList": [
+    "widget.matchawayplayerlist"
+  ],
+  "Epta.view.match.MatchCenterView": [
+    "widget.matchcenterview"
+  ],
+  "Epta.view.match.MatchHomePlayerList": [
+    "widget.matchhomeplayerlist"
+  ],
+  "Epta.view.match.MatchMainView": [
+    "widget.matchmainview"
+  ],
+  "Epta.view.match.MatchProgressList": [
+    "widget.matchprogresslist"
+  ],
+  "Epta.view.match.MatchProgressView": [
+    "widget.matchprogressview"
+  ],
+  "Epta.view.match.MatchRosterTabView": [
+    "widget.matchrostertabview"
+  ],
+  "Epta.view.match.OnlineUsersList": [
+    "widget.onlineuserslist"
   ],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],

@@ -4,7 +4,8 @@ Ext.define('Epta.view.match.MatchMainView', {
     requires: ['Ext.field.Toggle',
                'Ext.carousel.Carousel',
                'Epta.view.match.MatchCenterView',
-               'Epta.view.match.MatchProgressView'
+               'Epta.view.match.MatchProgressView',
+               'Epta.view.match.OnlineUsersList'
     ],
 
     config: {
@@ -49,7 +50,7 @@ Ext.define('Epta.view.match.MatchMainView', {
     				xtype: 'matchcenterview'        	    	
     			},
     			{
-        	    	html: '<p>right</p>',
+    				xtype: 'onlineuserslist', 
         	    	cls: 'card'
     			}
         	

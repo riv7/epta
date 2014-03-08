@@ -32,7 +32,8 @@ Ext.application({
          'MatchEvents',
          'MatchHomePlayers',
          'MatchAwayPlayers',
-         'ChatMessages'
+         'ChatMessages',
+         'OnlineUsers'
 	],
 
     icon: {
