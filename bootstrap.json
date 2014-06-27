@@ -4,4 +4,4 @@
  * combination of content from app.json, and all required package's package.json
  * files.  Customizations should be placed in app.json.
  */
-{"id":"9fede802-ccd8-4c19-a013-6cfdcced300a","js":[{"path":"touch/sencha-touch.js"},{"path":"bootstrap.js"},{"path":"app.js","update":"delta"}],"css":[{"path":"resources/css/app.css","update":"delta"}]}
+{"id":"9fede802-ccd8-4c19-a013-6cfdcced300a","js":[{"path":"touch/sencha-touch.js"},{"path":"bootstrap.js"},{"path":"app.js","update":"delta"}],"css":[{"path":"resources/css/app.css","update":"delta","platform":["chrome","safari","ios","android","firefox"]},{"path":"resources/css/wp.css","update":"delta","platform":["wp"]},{"path":"resources/css/bb10.css","update":"delta","platform":["bb10"]},{"path":"resources/css/cupertino.css","update":"delta","platform":["cupertino"]},{"path":"resources/css/mountainview.css","update":"delta","platform":["mountainview"]},{"path":"resources/css/cupertino-classic.css","update":"delta","platform":["cupertino-classic"]}]}

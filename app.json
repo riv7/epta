@@ -73,6 +73,32 @@
     "css": [
         {
             "path": "resources/css/app.css",
+            "platform": ["chrome", "safari", "ios", "android", "firefox"],
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/wp.css",
+            "platform": ["wp"],
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/bb10.css",
+            "platform": ["bb10"],
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/cupertino.css",
+            "platform": ["cupertino"],
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/mountainview.css",
+            "platform": ["mountainview"],
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/cupertino-classic.css",
+            "platform": ["cupertino-classic"],
             "update": "delta"
         }
     ],
