@@ -13,15 +13,15 @@ Ext.define('Epta.view.match.ChatList', {
 	    onItemDisclosure: false,
 	    emptyText: 'No data found!',
 			    	    
-	    itemTpl: 
-    	['<div class="ChatMessage">',
-    	 '<table id="myTable">',
-	      '<tr>',
-	      	'<td class="first-child">{time}</td>',
-	        '<td>{icon}</td>',
-	        '<td>{user}</td>',
-	        '<td>{message}</td>',	          
-	      '</tr>',
-	    '</table>']      
+	    itemTpl: '<strong>{time} | {icon} | {user} | {message}</strong>'
+//    	['<div class="ChatMessage">',
+//    	 '<table>',
+//	      '<tr>',
+//	      	'<td>{time}</td>',
+//	        '<td>{icon}</td>',
+//	        '<td>{user}</td>',
+//	        '<td>{message}</td>',	          
+//	      '</tr>',
+//	    '</table>']      
 	}
 });

@@ -1,4 +1,4 @@
-{ 'onlineUsers': [
+{'onlineUsers': [
 	{id: '1',user: 'Egge', online:'true', matchId: 1},
 	{id: '2',user: 'Haggi', online:'true', matchId: 1},
 	{id: '3',user: 'Uwe', online:'false', matchId: 1}	

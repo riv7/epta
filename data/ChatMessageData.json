@@ -1,4 +1,4 @@
-{ 'chatMessages': [
+{'chatMessages': [
 	{id: '1', time: '1', icon: 'iconuser1', user: 'michi', message: 'Hi alex', matchId: 1},
 	{id: '2', time: '2', icon: 'iconsystem', user: 'system', message: 'goal for sys 1: 0', matchId: 1},
 	{id: '3', time: '3', icon: 'iconuser2', user: 'alex', message: 'hi michi', matchId: 1}    

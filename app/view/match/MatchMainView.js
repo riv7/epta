@@ -34,7 +34,7 @@ Ext.define('Epta.view.match.MatchMainView', {
 			     },{
 			       xtype: 'togglefield',
 			       name: 'toggle',
-			       label: 'l‰uft',
+			       label: 'l√§uft',
 			       align: 'right'
 		    	 }			     
 	        ]
