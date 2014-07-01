@@ -1,5 +1,24 @@
 ﻿{'players': [
 	{id: '1', name: 'Matthias Lange', position: 'Abwehr', team: 'SVS'},
 	{id: '2', name: 'Michael Stöferle', position: 'Mittelfeld', team: 'SVS'},
-	{id: '3', name: 'Claudio Pizarro', position: 'Stürmer', team: 'FCB'}
+	{id: '3', name: 'Daniel Jacobi', position: 'Mittelfeld', team: 'SVS'},
+	{id: '4', name: 'Timo Bayer', position: 'Stürmer', team: 'SVS'},
+	{id: '5', name: 'Fabian Arb', position: 'Abwehr', team: 'SVS'},
+	{id: '6', name: 'Marc Scheffold', position: 'Mittelfeld', team: 'SVS'},
+	{id: '7', name: 'Albert Gashi', position: 'Abwehr', team: 'SVS'},
+	{id: '8', name: 'Florian Werz', position: 'Mittelfeld', team: 'SVS'},
+	{id: '9', name: 'Raffael Gapp', position: 'Abwehr', team: 'SVS'},
+	{id: '10', name: 'Frank Fromann', position: 'Mittelfeld', team: 'SVS'},
+	{id: '11', name: 'Dominik Miller', position: 'Mittelfeld', team: 'SVS'},	
+	{id: '12', name: 'Claudio Pizarro', position: 'Stürmer', team: 'FCB'},
+	{id: '13', name: 'Xerdan Shaquiri', position: 'Mittelfeld',  team: 'FCB'},	
+	{id: '14', name: 'Thiago', position: 'Stürmer',  team: 'FCB'},
+	{id: '15', name: 'Manuel Neuer', position: 'Tor', team: 'FCB'},	
+	{id: '16', name: 'Philipp Lahm', position: 'Abwehr',  team: 'FCB'},	
+	{id: '17', name: 'Bastian Schweinsteiger', position: 'Mittelfeld',  team: 'FCB'},
+	{id: '18', name: 'Rafinha', position: 'Abwehr', team: 'FCB'},	
+	{id: '19', name: 'Arjen Robben', position: 'Stürmer',  team: 'FCB'},	
+	{id: '20', name: 'Franck Ribery', position: 'Stürmer',  team: 'FCB'},
+	{id: '21', name: 'Mario Mandzukic', position: 'Stürmer',  team: 'FCB'},	
+	{id: '22', name: 'Diego Contento', position: 'Abwehr',  team: 'FCB'}
 ]}
