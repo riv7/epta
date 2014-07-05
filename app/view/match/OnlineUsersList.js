@@ -7,19 +7,17 @@ Ext.define('Epta.view.match.OnlineUsersList', {
 	
 	config: {
 		title: 'OnlineUsers',
-	    styleHtmlContent: true,
 	    scrollable: true,
 		store: 'OnlineUsers',
 	    onItemDisclosure: false,
 	    emptyText: 'No data found!',
-			    	    
-	    itemTpl: 
-    	['<div class="OnlineUsers">',
-    	 '<table id="myTable">',
-	      '<tr>',
-	      	'<td class="first-child">{user}</td>',
-	        '<td>{online}</td>',	           
-	      '</tr>',
-	    '</table>']      
+		grouped: false,
+		indexBar: false,		
+	
+	    itemTpl: '<div class=\"OnlineUsers\"><strong> '+
+	    			'{user} || '+
+	    			'{online}'+
+    				'</strong>'+
+	    		  '</div>'	   
 	}
 });

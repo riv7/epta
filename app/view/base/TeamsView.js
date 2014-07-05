@@ -8,7 +8,6 @@ Ext.define('Epta.view.base.TeamsView', {
     config: {
     	title: 'TeamsView',
 	    iconCls: 'action',	
-	    styleHtmlContent: true,
 	    scrollable: true,
 		store: 'Teams',
         onItemDisclosure: false,

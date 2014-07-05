@@ -11,6 +11,7 @@ Ext.define('Epta.model.MatchEvent', {
             { name: 'team', type: 'string' },
             { name: 'player', type: 'string' },
             { name: 'type', type: 'string' },
+            { name: 'message', type: 'string' },            
             { name: 'matchid', type: 'int' },
 
         ],

@@ -11,9 +11,8 @@ Ext.define('Epta.view.match.MatchProgressView', {
 		title: 'MatchProgressView',
 		layout:'vbox',
 //		defaults: {
-//	        flex : 1
-//	     },		
-	    	    
+//			styleHtmlContent: true	
+//		},	    	    
 	    items: [
 		    {
 		    	xtype: 'label',

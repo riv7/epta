@@ -3,7 +3,7 @@ Ext.define('Epta.controller.Main', {
     requires: ['Epta.view.edit.EditPlayerView',   
                'Epta.view.edit.EditTeamView',
                'Epta.view.edit.EditMatchView',
-               'Epta.view.match.MatchMainView',
+               'Epta.view.match.MatchCarousel',
                'Epta.view.edit.AddMatchPlayerView'
                ],
     
@@ -16,7 +16,7 @@ Ext.define('Epta.controller.Main', {
 			editPlayersView: 'editplayerview',
 			editTeamsView: 'editteamview',
 			editMatchesView: 'editmatchview',
-			matchMainView: 'matchmainview',		
+			matchCarousel: 'matchcarousel',		
 			matchAwayPlayerView: 'matchawayplayerlist',
 			matchhomePlayerView: 'matchhomeplayerlist',
 			addMatchPlayerView: 'addmatchplayerview',
@@ -24,7 +24,7 @@ Ext.define('Epta.controller.Main', {
 			btnNewPlayer: 'playersview titlebar button[action=settings]',
 			btnNewTeam: 'teamsview titlebar button[action=settings]',
 			btnNewMatch: 'matchesview titlebar button[action=settings]',
-			btnMatchMainBack: 'matchmainview titlebar button[action=back]',
+			btnMatchCarouselBack: 'matchcarousel titlebar button[action=back]',
 			btnAddMatchAwayPlayer: 'matchawayplayerlist button[action=settings]',
 			btnAddMatchHomePlayer: 'matchhomeplayerlist button[action=settings]',
 			btnConfirmAddMatchPlayer: 'addmatchplayerview button[action=confirm]'
@@ -43,8 +43,8 @@ Ext.define('Epta.controller.Main', {
 			'matchesview': {
 				disclose: 'onDiscloseEvent'
 			},
-			'btnMatchMainBack': {
-				tap: 'onBtnMatchMainBackTap'
+			'btnMatchCarouselBack': {
+				tap: 'onBtnMatchCarouselBackTap'
 			},
 			'btnAddMatchAwayPlayer': {
 				tap: 'onBtnAddMatchAwayPlayerTap'
@@ -67,7 +67,7 @@ Ext.define('Epta.controller.Main', {
 	onBtnNewMatchTap: function() {
 	    this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
-	onBtnMatchMainBackTap: function() {
+	onBtnMatchCarouselBackTap: function() {
 		Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);
 	    //this.getMainView().setActiveItem({xtype:'editmatchview'});	    
 	},
@@ -84,12 +84,12 @@ Ext.define('Epta.controller.Main', {
 	onDiscloseEvent: function(list, record, target, index, event, eOpts) {	
 		var nameT1 = record.get('team1')
 		var nameT2 = record.get('team2')
-		var matchmainview= Ext.create('Epta.view.match.MatchMainView');
-		matchmainview.down('titlebar').setTitle(nameT1+' vs. '+nameT2);		
-		matchmainview.down('#actionTeam1').setText(nameT1)
-		matchmainview.down('#actionTeam2').setText(nameT2)
+		var matchcarouselview= Ext.create('Epta.view.match.MatchCarousel');
+		matchcarouselview.down('titlebar').setTitle(nameT1+' vs. '+nameT2);		
+		matchcarouselview.down('#actionTeam1').setText(nameT1)
+		matchcarouselview.down('#actionTeam2').setText(nameT2)
 		//matchmainview.down('button[teamActionButton=actionTeam1]').setText(record.get('team1'))
-		Ext.Viewport.setActiveItem(matchmainview);		  	
+		Ext.Viewport.setActiveItem(matchcarouselview);		  	
     },    
     
     //called when the Application is launched, remove if not needed

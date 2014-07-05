@@ -7,13 +7,11 @@ Ext.define('Epta.view.match.ChatList', {
 	
 	config: {
 		title: 'ChatList',
-	    styleHtmlContent: true,
 	    scrollable: true,
 		store: 'ChatMessages',
 	    onItemDisclosure: false,
 	    emptyText: 'No data found!',
-			    	    
-	    itemTpl: '<strong>{time} | {icon} | {user} | {message}</strong>'
+	    itemTpl: '<div class="Chat"><strong>{time} | {icon} | {user} | {message}</strong></div>'
 //    	['<div class="ChatMessage">',
 //    	 '<table>',
 //	      '<tr>',

@@ -7,8 +7,7 @@ Ext.define('Epta.view.base.MatchesView', {
 
     config: {
     	title: 'MatchesView',
-	    iconCls: 'home',	
-	    styleHtmlContent: true,
+	    iconCls: 'home',
 	    scrollable: true,
 		store: 'Matches',
 		onItemDisclosure: true,

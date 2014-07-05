@@ -8,7 +8,6 @@ Ext.define('Epta.view.base.PlayersView', {
     config: {
     	title: 'PlayersView',
 	    iconCls: 'home',	
-	    styleHtmlContent: true,
 	    scrollable: true,
 		store: 'Players',
         onItemDisclosure: false,
