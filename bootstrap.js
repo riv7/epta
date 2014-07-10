@@ -74,9 +74,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Epta.view.edit.EditTeamView": [],
   "Epta.view.match.ChatList": [],
   "Epta.view.match.MatchAwayPlayerList": [],
+  "Epta.view.match.MatchCarousel": [],
   "Epta.view.match.MatchCenterView": [],
   "Epta.view.match.MatchHomePlayerList": [],
-  "Epta.view.match.MatchMainView": [],
   "Epta.view.match.MatchProgressList": [],
   "Epta.view.match.MatchProgressView": [],
   "Epta.view.match.MatchRosterTabView": [],
@@ -576,17 +576,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -761,14 +750,14 @@ Ext.ClassManager.addNameAliasMappings({
   "Epta.view.match.MatchAwayPlayerList": [
     "widget.matchawayplayerlist"
   ],
+  "Epta.view.match.MatchCarousel": [
+    "widget.matchcarousel"
+  ],
   "Epta.view.match.MatchCenterView": [
     "widget.matchcenterview"
   ],
   "Epta.view.match.MatchHomePlayerList": [
     "widget.matchhomeplayerlist"
-  ],
-  "Epta.view.match.MatchMainView": [
-    "widget.matchmainview"
   ],
   "Epta.view.match.MatchProgressList": [
     "widget.matchprogresslist"
@@ -1358,17 +1347,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
