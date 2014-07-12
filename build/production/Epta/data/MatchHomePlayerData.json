@@ -1,0 +1,13 @@
+{'matchplayers': [
+	{id: '4',number: '7', player: 'Claudio Pizarro', position: 'Abwehr', matchid: '1'},	
+	{id: '5',number: '5', player: 'Xerdan Shaquiri', position: 'Mittelfeld',  matchid: '1'},	
+	{id: '6',number: '11', player: 'Thiago', position: 'Stürmer',  matchid: '1'},
+	{id: '7',number: '1', player: 'Manuel Neuer', position: 'Tor', matchid: '1'},	
+	{id: '8',number: '2', player: 'Philipp Lahm', position: 'Abwehr',  matchid: '1'},	
+	{id: '9',number: '12', player: 'Bastian Schweinsteiger', position: 'Mittelfeld',  matchid: '1'},
+	{id: '10',number: '13', player: 'Rafinha', position: 'Abwehr', matchid: '1'},	
+	{id: '11',number: '23', player: 'Arjen Robben', position: 'Stürmer',  matchid: '1'},	
+	{id: '12',number: '7', player: 'Franck Ribery', position: 'Stürmer',  matchid: '1'},
+	{id: '13',number: '9', player: 'Mario Mandzukic', position: 'Stürmer',  matchid: '1'},	
+	{id: '14',number: '5', player: 'Diego Contento', position: 'Abwehr',  matchid: '1'}					
+]}

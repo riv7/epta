@@ -1,0 +1,8 @@
+{'matches': [
+	{id: '1',date: '2014-05-05',team1: 'SV Sulmetingen', team2: 'FC Bayern München'},
+    {id: '2',date: '2014-06-06',team1: 'SV Sulmetingen', team2: 'SC Freiburg'},
+    {id: '3',date: '2014-07-07',team1: 'Borussia Dortmund', team2: 'SV Sulmetingen'},
+    {id: '4',date: '2014-08-08',team1: 'SV Sulmetingen', team2: 'Borussia Mönchengladbach'},
+    {id: '5',date: '2014-09-09',team1: 'Hamburger SV', team2: 'SV Sulmetingen'},
+    {id: '6',date: '2014-10-10',team1: 'SV Sulmetingen', team2: 'Herta BSC Berlin'}
+]}

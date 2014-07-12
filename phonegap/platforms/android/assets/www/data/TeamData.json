@@ -1,0 +1,11 @@
+{'teams': [
+	{id: '1', name: 'SV Sulemtingen 1'},
+	{id: '2', name: 'SV Sulemtingen 2'},
+	{id: '3', name: 'FC Bayern München'},
+	{id: '4', name: 'VfB Stuttgart'},
+	{id: '5', name: 'SC Freiburg'},
+	{id: '6', name: 'Borussia Dortmund'},
+	{id: '7', name: 'Borussia Mönchengladbach'},
+	{id: '8', name: 'Hamburger SV'},
+	{id: '9', name: 'Herta BSC Berlin'}    
+]}
