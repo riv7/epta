@@ -73,7 +73,7 @@ Ext.define('Epta.controller.Main', {
 	},
 	onBtnConfirmAddMatchPlayerTap: function() {
 		//this.getMainView().setActiveItem(0);
-		Ext.Viewport.setActiveItem({xtype:'matchmainview'});
+		Ext.Viewport.setActiveItem({xtype:'matchcarousel'});
 	},
 	onBtnAddMatchAwayPlayerTap: function() {
 		Ext.Viewport.setActiveItem({xtype:'addmatchplayerview'});

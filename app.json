@@ -38,11 +38,7 @@
      *
      *      }
      */
-    "js": [
-		{
-			"path": "phonegap.js",
-			"remote": true
-		},
+    "js": [		
         {
             "path": "touch/sencha-touch.js",
             "x-bootstrap": true
@@ -132,8 +128,7 @@
     /**
      * Extra resources to be copied along when build
      */
-    "resources": [
-		"config.xml",
+    "resources": [		
         "resources/images",
         "resources/icons",
         "resources/startup"
